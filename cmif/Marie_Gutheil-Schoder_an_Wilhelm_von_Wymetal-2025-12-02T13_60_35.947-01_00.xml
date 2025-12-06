@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Marie Gutheil-Schoder an Wilhelm von Wymetal</title>
+                <editor>Christian Heitler<email>chris@tangolaboca.com</email>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <ref target="https://www.digital.wienbibliothek.at">Wienbibliothek im Rathaus</ref>
+                </publisher>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+                </availability>
+                <date when="2025-12-02T13:60:35.947-01:00"/>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl type="online" xml:id="zc0c0512-4109-48dd-addc-1d43bdec6caa">Wienbibliothek im Rathaus<ref target="https://www.digital.wienbibliothek.at/wbrobv02/content/titleinfo/4080963">https://www.digital.wienbibliothek.at/wbrobv02/content/titleinfo/4080963</ref>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc source="#zc0c0512-4109-48dd-addc-1d43bdec6caa" key="I">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/116932449">Marie Gutheil-Schoder</persName>
+                    <placeName ref="http://www.geonames.org/2600996">Wien-Döbling</placeName>
+                    <date when="1901-08-23"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p/>
+        </body>
+    </text>
+</TEI>
