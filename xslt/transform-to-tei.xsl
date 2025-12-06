@@ -27,11 +27,87 @@
             <text>
                 <body>
                     <listPerson>
-                        <xsl:apply-templates select="//P[matches(., '^\s*[A-ZÄÖÜ][a-zäöüß]+,\s+')]"/>
+                        <xsl:apply-templates select="//P[not(@type) or @type='person']"/>
                     </listPerson>
+
+                    <div type="references">
+                        <xsl:apply-templates select="//P[@type='ref']"/>
+                    </div>
+
+                    <listOrg>
+                        <xsl:apply-templates select="//P[@type='org']"/>
+                    </listOrg>
                 </body>
             </text>
         </TEI>
+    </xsl:template>
+
+    <!-- Template for reference entries (type='ref') -->
+    <xsl:template match="P[@type='ref']">
+        <xsl:variable name="text" select="normalize-space(.)"/>
+
+        <!-- Parse reference: extract source and target -->
+        <!-- Pattern: "Source →Target" or "Source. Siehe →Target" -->
+        <xsl:analyze-string select="$text" regex="^([^→]+).*?→\s*(.+?)\s*\.?\s*$">
+            <xsl:matching-substring>
+                <xsl:variable name="sourceName" select="normalize-space(regex-group(1))"/>
+                <xsl:variable name="targetName" select="normalize-space(regex-group(2))"/>
+
+                <ref xmlns="http://www.tei-c.org/ns/1.0" type="see">
+                    <xsl:attribute name="source" select="$sourceName"/>
+                    <xsl:attribute name="target" select="$targetName"/>
+                    <xsl:value-of select="$text"/>
+                </ref>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:template>
+
+    <!-- Template for organization entries (type='org') -->
+    <xsl:template match="P[@type='org']">
+        <xsl:variable name="text" select="normalize-space(.)"/>
+        <xsl:variable name="currentNode" select="."/>
+        <xsl:variable name="orgId" select="generate-id($currentNode)"/>
+
+        <!-- Extract page numbers -->
+        <xsl:variable name="pages" select="if (matches($text, '\.[\s\p{L}]*[\s,]*[\d,\s]+$'))
+                                           then replace($text, '^.*?\.\s*[^\d]*?([\d,\s]+)$', '$1')
+                                           else ''"/>
+
+        <!-- Extract organization name and description -->
+        <xsl:variable name="textWithoutPages" select="if ($pages != '')
+                                                       then replace($text, '(\..*?)([\d,\s]+)$', '$1')
+                                                       else $text"/>
+
+        <!-- Extract name (quoted part) and description -->
+        <xsl:analyze-string select="$textWithoutPages" regex="^[&#x201E;&#x201C;&quot;]([^&quot;&#x201C;]+)[&#x201C;&quot;]\s*\.?\s*(.*)$">
+            <xsl:matching-substring>
+                <xsl:variable name="orgName" select="regex-group(1)"/>
+                <xsl:variable name="description" select="normalize-space(regex-group(2))"/>
+
+                <org xmlns="http://www.tei-c.org/ns/1.0">
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="concat('org_', $orgId)"/>
+                    </xsl:attribute>
+
+                    <orgName>
+                        <xsl:value-of select="$orgName"/>
+                    </orgName>
+
+                    <xsl:if test="$description != ''">
+                        <note>
+                            <xsl:value-of select="$description"/>
+                        </note>
+                    </xsl:if>
+
+                    <!-- Add page numbers -->
+                    <xsl:if test="$pages != ''">
+                        <xsl:call-template name="parsePages">
+                            <xsl:with-param name="pages" select="normalize-space($pages)"/>
+                        </xsl:call-template>
+                    </xsl:if>
+                </org>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
     </xsl:template>
 
     <!-- Template for person entries -->
@@ -51,73 +127,89 @@
                                                        then replace($text, '(\..*?)([\d,\s]+)$', '$1')
                                                        else $text"/>
 
+        <!-- Extract the name part: everything before the first ( with dates -->
+        <!-- Look for patterns like (1870–1942) or (?–1942) or (1870–?) -->
+        <xsl:variable name="namePartRaw" select="if (matches($textWithoutPages, '\([^\)]*\d\d\d\d[^\)]*\)'))
+                                                  then replace($textWithoutPages, '^(.*?)\s*\([^\)]*\d\d\d\d[^\)]*\).*$', '$1')
+                                                  else if (matches($textWithoutPages, '\(\?[–—-]'))
+                                                  then replace($textWithoutPages, '^(.*?)\s*\(\?[–—-][^\)]*\).*$', '$1')
+                                                  else $textWithoutPages"/>
+
         <!-- Parse person name and dates using regex -->
         <!-- First try to find and separate the (eig. ...) part if present -->
-        <xsl:variable name="altNamePart" select="if (contains($textWithoutPages, '(eig.'))
-                                                  then replace($textWithoutPages, '^.*?\(eig\.\s*([^)]+)\).*$', '$1')
+        <xsl:variable name="altNamePart" select="if (contains($namePartRaw, '(eig.'))
+                                                  then replace($namePartRaw, '^.*?\(eig\.\s*([^)]+)\).*$', '$1')
                                                   else ''"/>
 
         <!-- Extract birth name (geb. ...) -->
-        <xsl:variable name="birthNamePart" select="if (matches($textWithoutPages, ',\s+geb\.\s+[A-ZÄÖÜ]'))
-                                                    then replace($textWithoutPages, '^.*?,\s+geb\.\s+([A-ZÄÖÜ][^\s,.(]+).*$', '$1')
+        <xsl:variable name="birthNamePart" select="if (matches($namePartRaw, ',\s+geb\.\s+[A-ZÄÖÜ]'))
+                                                    then replace($namePartRaw, '^.*?,\s+geb\.\s+([A-ZÄÖÜ][^\s,.(]+).*$', '$1')
                                                     else ''"/>
 
         <!-- Extract married name (verh. ...) -->
-        <xsl:variable name="marriedNamePart" select="if (matches($textWithoutPages, ',\s+verh\.\s+[A-ZÄÖÜ]'))
-                                                      then replace($textWithoutPages, '^.*?,\s+verh\.\s+([A-ZÄÖÜ][^\s,.(]+).*$', '$1')
+        <xsl:variable name="marriedNamePart" select="if (matches($namePartRaw, ',\s+verh\.\s+[A-ZÄÖÜ]'))
+                                                      then replace($namePartRaw, '^.*?,\s+verh\.\s+([A-ZÄÖÜ][^\s,.(]+).*$', '$1')
                                                       else ''"/>
 
-        <!-- Remove the (eig. ...), geb., and verh. parts for further processing -->
-        <xsl:variable name="textWithoutAltName" select="replace(
-                                                         replace(
-                                                         replace($textWithoutPages,
-                                                                 '\(eig\.[^)]+\)\s*', ''),
-                                                                 ',\s+geb\.\s+[A-ZÄÖÜ][^\s,.(]+', ''),
-                                                                 ',\s+verh\.\s+[A-ZÄÖÜ][^\s,.(]+', '')"/>
+        <!-- Clean the name part by removing (eig. ...), geb., and verh. parts -->
+        <xsl:variable name="namePart" select="normalize-space(
+                                               replace(
+                                               replace(
+                                               replace($namePartRaw,
+                                                       '\(eig\.[^)]+\)\s*', ''),
+                                                       ',\s+geb\.\s+[A-ZÄÖÜ][^\s,.(]+', ''),
+                                                       ',\s+verh\.\s+[A-ZÄÖÜ][^\s,.(]+', ''))"/>
 
-        <xsl:analyze-string select="$textWithoutAltName"
-            regex="^([^(]+?)\s*(\([^)]*?\d\d\d\d[^)]*?\))?\.\s*(.*)$">
-            <xsl:matching-substring>
-                <xsl:variable name="namepart" select="normalize-space(regex-group(1))"/>
-                <xsl:variable name="dates" select="normalize-space(regex-group(2))"/>
-                <xsl:variable name="description" select="normalize-space(regex-group(3))"/>
+        <!-- Extract dates part -->
+        <xsl:variable name="dates" select="if (matches($textWithoutPages, '\([^\)]*\d\d\d\d[^\)]*\)'))
+                                            then replace($textWithoutPages, '^.*?(\([^\)]*\d\d\d\d[^\)]*\)).*$', '$1')
+                                            else if (matches($textWithoutPages, '\(\?[–—-][^\)]*\)'))
+                                            then replace($textWithoutPages, '^.*?(\(\?[–—-][^\)]*\)).*$', '$1')
+                                            else ''"/>
 
-                <person xmlns="http://www.tei-c.org/ns/1.0">
-                    <xsl:attribute name="xml:id">
-                        <xsl:value-of select="concat('person_', $personId)"/>
-                    </xsl:attribute>
+        <!-- Extract description: everything after dates and before page numbers -->
+        <xsl:variable name="afterDates" select="if ($dates != '')
+                                                 then replace($textWithoutPages, '^.*?\([^\)]*\d\d\d\d[^\)]*\)\.?\s*(.*)$', '$1')
+                                                 else ''"/>
+        <xsl:variable name="description" select="normalize-space($afterDates)"/>
 
-                    <!-- Parse name -->
-                    <xsl:call-template name="parseName">
-                        <xsl:with-param name="namepart" select="$namepart"/>
-                        <xsl:with-param name="altName" select="$altNamePart"/>
-                        <xsl:with-param name="birthName" select="$birthNamePart"/>
-                        <xsl:with-param name="marriedName" select="$marriedNamePart"/>
+        <!-- Only create person element if we have a name part with comma (surname, forename) -->
+        <xsl:if test="contains($namePart, ',')">
+            <person xmlns="http://www.tei-c.org/ns/1.0">
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="concat('person_', $personId)"/>
+                </xsl:attribute>
+
+                <!-- Parse name -->
+                <xsl:call-template name="parseName">
+                    <xsl:with-param name="namepart" select="$namePart"/>
+                    <xsl:with-param name="altName" select="$altNamePart"/>
+                    <xsl:with-param name="birthName" select="$birthNamePart"/>
+                    <xsl:with-param name="marriedName" select="$marriedNamePart"/>
+                </xsl:call-template>
+
+                <!-- Parse dates if present -->
+                <xsl:if test="$dates != ''">
+                    <xsl:call-template name="parseDates">
+                        <xsl:with-param name="dates" select="$dates"/>
                     </xsl:call-template>
+                </xsl:if>
 
-                    <!-- Parse dates if present -->
-                    <xsl:if test="$dates != ''">
-                        <xsl:call-template name="parseDates">
-                            <xsl:with-param name="dates" select="$dates"/>
-                        </xsl:call-template>
-                    </xsl:if>
+                <!-- Add description as note -->
+                <xsl:if test="$description != ''">
+                    <note>
+                        <xsl:value-of select="$description"/>
+                    </note>
+                </xsl:if>
 
-                    <!-- Add description as note -->
-                    <xsl:if test="$description != ''">
-                        <note>
-                            <xsl:value-of select="$description"/>
-                        </note>
-                    </xsl:if>
-
-                    <!-- Add page numbers as biblScope -->
-                    <xsl:if test="$pages != ''">
-                        <xsl:call-template name="parsePages">
-                            <xsl:with-param name="pages" select="normalize-space($pages)"/>
-                        </xsl:call-template>
-                    </xsl:if>
-                </person>
-            </xsl:matching-substring>
-        </xsl:analyze-string>
+                <!-- Add page numbers as biblScope -->
+                <xsl:if test="$pages != ''">
+                    <xsl:call-template name="parsePages">
+                        <xsl:with-param name="pages" select="normalize-space($pages)"/>
+                    </xsl:call-template>
+                </xsl:if>
+            </person>
+        </xsl:if>
     </xsl:template>
 
     <!-- Template to parse name -->
