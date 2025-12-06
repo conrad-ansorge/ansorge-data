@@ -7,18 +7,18 @@
                 </editor>
             </titleStmt>
             <publicationStmt>
-                <publisher>
-                    <ref target="https://staatsbibliothek-berlin.de">Staatsbibliothek zu Berlin, Preußischer Kulturbesitz (Nachlass Conrad Ansorge : N.Mus.Depos.63)</ref>
-                </publisher>
+                <publisher>Böhlau</publisher>
                 <availability>
-                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY
+                        4.0</licence>
                 </availability>
                 <date when="2025-12-02T18:21:14.287-01:00"/>
             </publicationStmt>
             <sourceDesc>
-                <bibl type="print" xml:id="gb54f92f-e0cb-4494-ab49-b8b587345b84">Conrad Ansorge 1862-1930 : ein Pianist des Fin de siècle in Berlin und Wien
-Rathgeber, Eike [HerausgeberIn] ; Heitler, Christian [HerausgeberIn] ; Schwartz, Manuela, [HerausgeberIn]
-Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
+                <bibl type="print" xml:id="gb54f92f-e0cb-4494-ab49-b8b587345b84">Rathgeber, Eike;
+                    Heitler, Christian; Schwartz, Manuela (Hrsgg.): Conrad Ansorge 1862-1930. Ein
+                    Pianist des Fin de siècle in Berlin und Wien. Wien, Köln, Weimar: Böhlau Verlag
+                    2017, ISBN 978-3-205-20307-0</bibl>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -30,7 +30,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="2">
@@ -41,18 +42,20 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="3">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2761369">wien</placeName>
+                    <placeName ref="http://www.geonames.org/2761369">Wien</placeName>
                     <date when="1901-12-31"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="4">
@@ -63,52 +66,61 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="5">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
                     <persName ref="https://d-nb.info/gnd/116611804">Franz Evers</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369" cert="low">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        cert="low">Wien</placeName>
                     <date notBefore="1903-03-11" notAfter="1903-04-01"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2810538">Berlin Westend</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2810538">Berlin
+                        Westend</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="6">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1903-01-01" notAfter="1903-06-01">Frühjahr 1903</date>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159" cert="low">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        cert="low">Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="7">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369" cert="low">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        cert="low">Wien</placeName>
                     <date notBefore="1903-01-01" notAfter="1903-12-31"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159" cert="low">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        cert="low">Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="8">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date when="1903-04-23"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159" cert="low">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        cert="low">Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="9">
@@ -122,29 +134,34 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="10">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date when="1903-05-05"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="11">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1903-05-07" notAfter="1903-05-30">Mai 1903</date>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="12">
@@ -153,17 +170,20 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                     <persName ref="https://d-nb.info/gnd/142372943">Felix Fischer</persName>
                     <persName ref="https://d-nb.info/gnd/117225789">Paul Stefan</persName>
                     <persName ref="https://d-nb.info/gnd/140155724">Thesi Slottko</persName>
-                    <persName ref="https://d-nb.info/gnd/1330875508" cert="low">Minna Wiesmüller</persName>
+                    <persName ref="https://d-nb.info/gnd/1330875508" cert="low">Minna
+                        Wiesmüller</persName>
                     <persName>Henriette von Wymetal</persName>
                     <persName>Franz von Wymetal</persName>
                     <persName>Eugenie Br. Jüptner </persName>
                     <persName>Anna Jüptner v. Jonstorff</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien, Wintergasse 35</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien,
+                        Wintergasse 35</placeName>
                     <date when="1903-06-01"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="13">
@@ -174,13 +194,15 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="14">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
                     <date when="1903-08-04"/>
                 </correspAction>
                 <correspAction type="received">
@@ -191,34 +213,40 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="15">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
                     <date when="1903-08-16"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="16">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
                     <date when="1903-09-07"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="17">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
                     <date when="1903-09-08"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="18">
@@ -229,51 +257,60 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="19">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
                     <date when="1903-09-16"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="20">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
                     <date when="1903-09-21"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="21">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
                     <date when="1903-09-24"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="22">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date when="1903-09-26"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="23">
@@ -284,7 +321,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="24">
@@ -295,7 +333,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="25">
@@ -307,7 +346,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="26">
@@ -318,18 +358,21 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="27">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date when="1903-10-19"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="28">
@@ -340,17 +383,22 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="29">
                 <correspAction type="sent">
-                    <persName evidence="conjecture" ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <persName evidence="conjecture" ref="https://d-nb.info/gnd/1243981628">Wilhelm
+                        von Wymetal</persName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                 </correspAction>
                 <correspAction type="received">
-                    <persName evidence="conjecture" ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <persName evidence="conjecture" ref="https://d-nb.info/gnd/116014326">Conrad
+                        Ansorge</persName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="30">
@@ -366,23 +414,27 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                     <persName ref="https://d-nb.info/gnd/1024988090">H. Ranzoni</persName>
                     <persName ref="https://d-nb.info/gnd/117225789">Paul Stefan</persName>
                     <persName ref="https://d-nb.info/gnd/13020868X">Alfred Keller</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1903-07-01" notAfter="1903-12-31">Herbst 1903</date>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="31">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1903-07-01" notAfter="1903-11-30"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="32">
@@ -393,7 +445,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="33">
@@ -404,7 +457,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="34">
@@ -415,7 +469,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="35">
@@ -426,29 +481,34 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="36">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date evidence="conjecture" when="1903-11-26"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="37">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date when="1903-11-29"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="38">
@@ -459,18 +519,21 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="39">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1903-11-30" notAfter="1903-12-13"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="40">
@@ -481,24 +544,28 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="41">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date when="1903-12-09"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="42">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date when="1903-12-11"/>
                 </correspAction>
                 <correspAction type="received">
@@ -509,23 +576,27 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="43">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1903-12-11" notAfter="1903-12-14"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="44">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1903-12-01" notAfter="1903-12-31"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="45">
@@ -536,13 +607,15 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="46">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1903-12-22" notAfter="1903-12-31"/>
                 </correspAction>
                 <correspAction type="received">
@@ -558,7 +631,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="48">
@@ -569,7 +643,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="49">
@@ -580,7 +655,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="50">
@@ -591,7 +667,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="51">
@@ -602,7 +679,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="52">
@@ -613,7 +691,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="53">
@@ -624,18 +703,21 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="54">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1904-01-12" notAfter="1904-01-31"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="55">
@@ -646,7 +728,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="56">
@@ -657,7 +740,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="57">
@@ -668,7 +752,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="58">
@@ -679,18 +764,21 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="59">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1904-01-30" notAfter="1904-02-17"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="60">
@@ -711,18 +799,21 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="62">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date when="1904-03-20"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="63">
@@ -733,7 +824,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="64">
@@ -744,7 +836,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="65">
@@ -755,7 +848,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="66">
@@ -766,7 +860,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="67">
@@ -777,7 +872,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="68">
@@ -788,18 +884,21 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="69">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2782979" cert="low">Admont, Hotel Post</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2782979"
+                        cert="low">Admont, Hotel Post</placeName>
                     <date when="1904-06-26"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="70">
@@ -814,34 +913,40 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                     <persName ref="http://correspSearch.net/unknown">Blau</persName>
                     <persName ref="http://correspSearch.net/unknown">Mama Wymetal</persName>
                     <persName ref="http://correspSearch.net/unknown">Noemi P. Hoffmann</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
                     <date when="1904-07-02"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="71">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
                     <date when="1904-08-15"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="72">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei Wien</placeName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
                     <date when="1904-09-19"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="73">
@@ -852,7 +957,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="74">
@@ -863,18 +969,21 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="75">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                     <date notBefore="1904-01-01" notAfter="1904-12-31"/>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="76">
@@ -885,7 +994,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="77">
@@ -896,7 +1006,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="78">
@@ -907,7 +1018,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="79">
@@ -918,7 +1030,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="80">
@@ -946,7 +1059,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="82">
                 <correspAction type="sent">
                     <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
-                    <placeName ref="http://www.geonames.org/2761436">Wetzelsdorf bei Graz</placeName>
+                    <placeName ref="http://www.geonames.org/2761436">Wetzelsdorf bei
+                        Graz</placeName>
                     <date when="1908-03-30"/>
                 </correspAction>
                 <correspAction type="received">
@@ -962,7 +1076,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="84">
@@ -973,7 +1088,8 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
                 </correspAction>
             </correspDesc>
             <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="85">
@@ -984,7 +1100,140 @@ Wien : Köln : Weimar : Böhlau Verlag ; 2017</bibl>
                 </correspAction>
                 <correspAction type="received">
                     <persName ref="https://d-nb.info/gnd/116014326">Conrad Ansorge</persName>
-                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159">Berlin</placeName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2950159"
+                        >Berlin</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="VII">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/11863643X">A. Zemlinsky</persName>
+                    <persName ref="https://d-nb.info/gnd/116932295">G. Gutheil</persName>
+                    <persName ref="https://d-nb.info/gnd/118610023">A. Schönberg</persName>
+                    <placeName ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <date notBefore="1904-01-01" notAfter="1904-01-31"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/118607154">Heinrich Schenker</persName>
+                    <placeName evidence="conjecture">Wien</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="I">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/116932449">Marie Gutheil-Schoder</persName>
+                    <placeName ref="http://www.geonames.org/2600996">Wien-Döbling</placeName>
+                    <date when="1901-08-23"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628">Wilhelm von Wymetal</persName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="II">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/118609807">Arthur Schnitzler</persName>
+                    <placeName ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <date when="1902-11-28"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628"> Wilhelm von Wymetal</persName>
+                    <placeName ref="http://www.geonames.org/2761369">Wien</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="IX">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/116932449">Marie Gutheil-Schoder</persName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
+                    <date when="1904-04-13"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628"> Wilhelm von Wymetal</persName>
+                    <placeName evidence="conjecture">Wien</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="XII">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/118609807">Arthur Schnitzler</persName>
+                    <placeName ref="http://www.geonames.org/2761369">Wien</placeName>
+                    <date when="1904-06-28"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628"> Wilhelm von Wymetal</persName>
+                    <placeName ref="http://www.geonames.org/2768232">Purkersdorf bei
+                        Wien</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="XIII">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/116932449">Marie Gutheil-Schoder</persName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
+                    <date when="1904-11-23"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628"> Wilhelm von Wymetal</persName>
+                    <placeName ref="http://www.geonames.org/2761369">Wien</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="XV">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/116932449">Marie Gutheil-Schoder</persName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        cert="low">Wien</placeName>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628"> Wilhelm von Wymetal</persName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        cert="low">Wien</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="XVI">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/118609807">Arthur Schnitzler</persName>
+                    <placeName ref="http://www.geonames.org/12196319">Wien Währing</placeName>
+                    <date when="1905-09-15"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628"> Wilhelm von Wymetal</persName>
+                    <placeName ref="http://www.geonames.org/2761369">Wien</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="XVII">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/116932449">Marie Gutheil-Schoder</persName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
+                    <date when="1905-12-23"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628"> Wilhelm von Wymetal</persName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="XVIII">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/118609807">Arthur Schnitzler</persName>
+                    <placeName ref="http://www.geonames.org/12196319">Wien Währing</placeName>
+                    <date when="1906-05-11"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628"> Wilhelm von Wymetal</persName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
+                </correspAction>
+            </correspDesc>
+            <correspDesc source="#gb54f92f-e0cb-4494-ab49-b8b587345b84" key="XIX">
+                <correspAction type="sent">
+                    <persName ref="https://d-nb.info/gnd/118609807">Arthur Schnitzler</persName>
+                    <placeName ref="http://www.geonames.org/12196319">Wien Währing</placeName>
+                    <date when="1907-10-30"/>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="https://d-nb.info/gnd/1243981628"> Wilhelm von Wymetal</persName>
+                    <placeName evidence="conjecture" ref="http://www.geonames.org/2761369"
+                        >Wien</placeName>
                 </correspAction>
             </correspDesc>
         </profileDesc>

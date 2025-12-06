@@ -146,18 +146,18 @@
         <xsl:variable name="currentNode" select="."/>
         <xsl:variable name="personId" select="generate-id($currentNode)"/>
         <!-- Extract page numbers: look for pattern after last sentence/description -->
-        <!-- Page numbers are typically: space followed by digits, commas, spaces, ending with digits -->
+        <!-- Page numbers are typically: space followed by digits, commas, spaces, ending with digits, f, or ff -->
         <xsl:variable name="pages" select="
-                if (matches($text, '\.[\s\p{L}]*[\s,]*[\d,\s]+$'))
+                if (matches($text, '\.[\s\p{L}]*[\s,]*[\d,\sff]+$'))
                 then
-                    replace($text, '^.*?\.\s*[^\d]*?([\d,\s]+)$', '$1')
+                    replace($text, '^.*?\.\s*[^\d]*?([\d,\sff]+)$', '$1')
                 else
                     ''"/>
         <!-- Remove page numbers from text -->
         <xsl:variable name="textWithoutPages" select="
                 if ($pages != '')
                 then
-                    replace($text, '(\..*?)([\d,\s]+)$', '$1')
+                    replace($text, '(\..*?)([\d,\sff]+)$', '$1')
                 else
                     $text"/>
         <!-- Extract the name part: everything before the first ( with dates or | separator -->
@@ -412,8 +412,9 @@
             <xsl:variable name="pageRange" select="normalize-space(.)"/>
             <xsl:if test="$pageRange != ''">
                 <note xmlns="http://www.tei-c.org/ns/1.0" type="page">
-                    <!-- Check if it's a page range (e.g., "12–15") or single page -->
+                    <!-- Check if it's a page range (e.g., "12–15"), single page with f/ff, or single page -->
                     <xsl:choose>
+                        <!-- Page range like "12–15" -->
                         <xsl:when test="matches($pageRange, '^\d+[–—-]\d+$')">
                             <xsl:analyze-string select="$pageRange" regex="^(\d+)[–—-](\d+)$">
                                 <xsl:matching-substring>
@@ -423,10 +424,21 @@
                                 </xsl:matching-substring>
                             </xsl:analyze-string>
                         </xsl:when>
+                        <!-- Page with "ff" like "232ff" -->
+                        <xsl:when test="matches($pageRange, '^\d+ff?$')">
+                            <xsl:analyze-string select="$pageRange" regex="^(\d+)(ff?)$">
+                                <xsl:matching-substring>
+                                    <xsl:attribute name="from" select="regex-group(1)"/>
+                                    <xsl:value-of select="$pageRange"/>
+                                </xsl:matching-substring>
+                            </xsl:analyze-string>
+                        </xsl:when>
+                        <!-- Single page like "14" -->
                         <xsl:when test="matches($pageRange, '^\d+$')">
                             <xsl:attribute name="n" select="$pageRange"/>
                             <xsl:value-of select="$pageRange"/>
                         </xsl:when>
+                        <!-- Fallback for other formats -->
                         <xsl:otherwise>
                             <xsl:value-of select="$pageRange"/>
                         </xsl:otherwise>
