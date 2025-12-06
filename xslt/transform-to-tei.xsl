@@ -280,12 +280,54 @@
         <xsl:param name="altName" select="''"/>
         <xsl:param name="birthName" select="''"/>
         <xsl:param name="marriedName" select="''"/>
+
+        <!-- Extract name variants in parentheses from surname and forename -->
+        <!-- Pattern: (Morduch-)Ekman or Ida (Paulina) -->
+        <xsl:variable name="surnameVariant" select="
+            if (matches($namepart, '\([^)]*-\)[^,]+'))
+            then replace($namepart, '^.*?\(([^)]*-)\)[^,]+.*$', '$1')
+            else ''"/>
+
+        <xsl:variable name="forenameVariant" select="
+            if (matches($namepart, ',\s+[^(]+\([^)]+\)'))
+            then replace($namepart, '^[^,]+,\s+[^(]+\(([^)]+)\).*$', '$1')
+            else ''"/>
+
+        <!-- Clean namepart from variants -->
+        <xsl:variable name="cleanName" select="
+            replace(
+            replace($namepart, '\([^)]*-\)', ''),
+            '\([^)]+\)', '')"/>
+
         <!-- Output main name -->
         <persName xmlns="http://www.tei-c.org/ns/1.0">
             <xsl:call-template name="splitName">
-                <xsl:with-param name="name" select="$namepart"/>
+                <xsl:with-param name="name" select="normalize-space($cleanName)"/>
             </xsl:call-template>
         </persName>
+
+        <!-- Output surname variant if present -->
+        <xsl:if test="$surnameVariant != ''">
+            <xsl:variable name="variantSurname" select="
+                if (ends-with($surnameVariant, '-'))
+                then concat(substring($surnameVariant, 1, string-length($surnameVariant) - 1),
+                           substring-before(substring-after($cleanName, ' '), ','))
+                else $surnameVariant"/>
+            <persName xmlns="http://www.tei-c.org/ns/1.0" type="namensvariante">
+                <surname>
+                    <xsl:value-of select="normalize-space($variantSurname)"/>
+                </surname>
+            </persName>
+        </xsl:if>
+
+        <!-- Output forename variant if present -->
+        <xsl:if test="$forenameVariant != ''">
+            <persName xmlns="http://www.tei-c.org/ns/1.0" type="namensvariante">
+                <forename>
+                    <xsl:value-of select="normalize-space($forenameVariant)"/>
+                </forename>
+            </persName>
+        </xsl:if>
         <!-- Output alternative name if present (eig.) -->
         <xsl:if test="$altName != ''">
             <persName xmlns="http://www.tei-c.org/ns/1.0" type="eigentlich">

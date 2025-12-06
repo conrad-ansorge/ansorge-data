@@ -13,6 +13,8 @@
                         4.0</licence>
                 </availability>
                 <date when="2025-12-02T18:21:14.287-01:00"/>
+                <idno type="url"
+                    >https://raw.githubusercontent.com/conrad-ansorge/ansorge-data/refs/heads/main/cmif/2017_Conrad-Ansorge.xml</idno>
             </publicationStmt>
             <sourceDesc>
                 <bibl type="print" xml:id="gb54f92f-e0cb-4494-ab49-b8b587345b84">Rathgeber, Eike;
