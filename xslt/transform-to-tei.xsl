@@ -31,7 +31,9 @@
                     </listPerson>
 
                     <div type="references">
+                        <note>
                         <xsl:apply-templates select="//P[@type='ref']"/>
+                        </note>
                     </div>
 
                     <listOrg>
@@ -45,6 +47,7 @@
     <!-- Template for reference entries (type='ref') -->
     <xsl:template match="P[@type='ref']">
         <xsl:variable name="text" select="normalize-space(.)"/>
+        <xsl:variable name="position" select="count(preceding-sibling::P[@type='ref']) + 1"/>
 
         <!-- Parse reference: extract source and target -->
         <!-- Pattern: "Source →Target" or "Source. Siehe →Target" -->
@@ -54,6 +57,9 @@
                 <xsl:variable name="targetName" select="normalize-space(regex-group(2))"/>
 
                 <ref xmlns="http://www.tei-c.org/ns/1.0" type="see">
+                    <xsl:attribute name="xml:id">
+                        <xsl:value-of select="concat('ansorge_r_', $position)"/>
+                    </xsl:attribute>
                     <xsl:attribute name="source" select="$sourceName"/>
                     <xsl:attribute name="target" select="$targetName"/>
                     <xsl:value-of select="$text"/>
@@ -65,8 +71,7 @@
     <!-- Template for organization entries (type='org') -->
     <xsl:template match="P[@type='org']">
         <xsl:variable name="text" select="normalize-space(.)"/>
-        <xsl:variable name="currentNode" select="."/>
-        <xsl:variable name="orgId" select="generate-id($currentNode)"/>
+        <xsl:variable name="position" select="count(preceding-sibling::P[@type='org']) + 1"/>
 
         <!-- Extract page numbers -->
         <xsl:variable name="pages" select="if (matches($text, '\.[\s\p{L}]*[\s,]*[\d,\s]+$'))
@@ -86,7 +91,7 @@
 
                 <org xmlns="http://www.tei-c.org/ns/1.0">
                     <xsl:attribute name="xml:id">
-                        <xsl:value-of select="concat('org_', $orgId)"/>
+                        <xsl:value-of select="concat('ansorge_o_', $position)"/>
                     </xsl:attribute>
 
                     <orgName>
@@ -175,9 +180,10 @@
 
         <!-- Only create person element if we have a name part with comma (surname, forename) -->
         <xsl:if test="contains($namePart, ',')">
+            <xsl:variable name="position" select="count(preceding-sibling::P[not(@type) or @type='person'][contains(normalize-space(.), ',')]) + 1"/>
             <person xmlns="http://www.tei-c.org/ns/1.0">
                 <xsl:attribute name="xml:id">
-                    <xsl:value-of select="concat('person_', $personId)"/>
+                    <xsl:value-of select="concat('ansorge_p_', $position)"/>
                 </xsl:attribute>
 
                 <!-- Parse name -->
