@@ -9019,12 +9019,38 @@
          </div>
          <div type="organizations">
             <listOrg>
+               <org xml:id="ansorge_o_1">
+                  <orgName>Deutscher Liederkranz und Arion Society</orgName>
+                  <note>Männergesangsvereine deutscher Auswanderer in New York. 1887/88 hatte William Steinway die Präsidentschaft des „Liederkranzes“ inne (vgl. History of the Liederkranz of the City of New York 1847 to 1947 and of The Arion, New York. New York: The Drechsel Printing Co. 1948). 79f, 85</note>
+               </org>
+               <org xml:id="ansorge_o_2">
+                  <orgName>Doblinger</orgName>
+                  <note>Österr. Musikverlag in Wien, gegründet 1816/17 von Friedrich Mainzer als Musikalienleihanstalt, 1871 von →Ludwig Doblinger übernommen und 1876 an Bernhard Herzmansky, sen. verkauft.</note>
+                  <note type="page" n="487">487</note>
+                  <note type="page" n="514">514</note>
+                  <note type="page" n="578">578</note>
+               </org>
+               <org xml:id="ansorge_o_3">
+                  <orgName>Duesberg-Quartett, 1891 als „Erstes Wiener Volksquartett für classische Musik“, u</orgName>
+                  <note>a. auch von der dt. Schauspielerin, Frauenrechtlerin und Pianistin Anna Lesser-Kiessling (1841/43–?) mitbegründet. Versuchte durch niedrige Eintrittspreise ein neues, weniger zahlungskräftiges Publikum für Kammermusik zu gewinnen. Erster Leiter und Primgeiger →August Duesberg; Mitglieder: →Herbert Duesberg, E. O. oder E. A. Gschöpf, Anton Barthlemé (Cello).</note>
+                  <note type="page" n="457">457</note>
+                  <note type="page" n="511">511</note>
+               </org>
                <org xml:id="ansorge_o_4">
                   <orgName>Groschel’s Conservatory</orgName>
                   <note>Von dem Cellisten Henry Mollenhauer (1825–1889/90) und J. W. Groschel 1864/65 als „Brooklyn Conservatory of Music“ gegründetes Privatinstitut (The Brooklyn Daily Eagle XXV/192 (20.09.1865), S. 2.). 1890 übernahm →Max Spicker die Leitung von Groschels Tochter Louise.</note>
                   <note type="page" n="12">12</note>
                   <note type="page" n="91">91</note>
                   <note type="page" n="683">683</note>
+               </org>
+               <org xml:id="ansorge_o_5">
+                  <orgName>Hagenbund, eigentlich „Künstlerbund Hagen“ war eine neben der „Secession“ im Jahre 1900 gegründete Künstlervereinigung der gemäßigten Moderne, die bis 1938 bestehen blieb und Kunstwerke vorwiegend in der Zedlitzhalle ausstellte</orgName>
+                  <note>Zu seinen Mitgliedern zählten u. a. auch Heinrich Lefler und Joseph Urban. 126, 395f, 398ff, 417, 419ff, 477, 499, 503f, 506ff, 513f, 520, 527, 530, 532f, 535ff, 539ff, 548f, 551ff, 558f, 561ff, 566, 568ff, 575</note>
+               </org>
+               <org xml:id="ansorge_o_6">
+                  <orgName>Kneisel-Quartet, gegründet 1885 in Boston durch Franz Kneisel (1865–1926), einen aus Rumänien stammenden Schüler Hellmesbergers, verlegte seinen Sitz 1903/05 nach New York, wo es bis zum Abschiedskonzert am 03</orgName>
+                  <note>04.1917 als führendes amerik. Streichquartett galt.</note>
+                  <note type="page" n="81">81</note>
                </org>
                <org xml:id="ansorge_o_7">
                   <orgName>Mendelssohn Glee Club</orgName>
@@ -9034,12 +9060,12 @@
                </org>
                <org xml:id="ansorge_o_8">
                   <orgName>Österreichisches Damen-Quartett</orgName>
-                  <note>bestehend aus den Schwestern Tschampa und Marianne Gallowitsch (später Frieda Perner), gegründet in den 1870er Jahren, die sehr erfolgreiche Tourneen in ganz Europa unternahmen. Das Ensemble wurde von Fanny Tschampa, einer Schülerin Julius Stockhausens (1826–1906) geleitet.</note>
+                  <note>, bestehend aus den Schwestern Tschampa und Marianne Gallowitsch (später Frieda Perner), gegründet in den 1870er Jahren, die sehr erfolgreiche Tourneen in ganz Europa unternahmen. Das Ensemble wurde von Fanny Tschampa, einer Schülerin Julius Stockhausens (1826–1906) geleitet.</note>
                   <note type="page" n="69">69</note>
                </org>
                <org xml:id="ansorge_o_9">
                   <orgName>Rosé-Quartett</orgName>
-                  <note>von Arnold Rosé 1882 in Wien gegründet, Mitglieder waren A. Rosé (1. Violine), Albert Bachrich (2. Violine bis 1904), Paul Fischer (2. Violine ab 1905), Anton Ruzitska (Viola ab 1901) und Friedrich Buxbaum (Violoncello ab 1901). 132, 398, 409, 424, 435, 457, 623f, 634, 667</note>
+                  <note>, von Arnold Rosé 1882 in Wien gegründet, Mitglieder waren A. Rosé (1. Violine), Albert Bachrich (2. Violine bis 1904), Paul Fischer (2. Violine ab 1905), Anton Ruzitska (Viola ab 1901) und Friedrich Buxbaum (Violoncello ab 1901). 132, 398, 409, 424, 435, 457, 623f, 634, 667</note>
                </org>
             </listOrg>
          </div>
