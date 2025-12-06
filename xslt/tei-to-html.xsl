@@ -135,11 +135,23 @@
 
     <!-- Person Template -->
     <xsl:template match="tei:person">
-        <xsl:variable name="firstLetter" select="upper-case(substring(tei:persName[1]/tei:surname, 1, 1))"/>
-        <xsl:variable name="prevFirstLetter" select="upper-case(substring(preceding-sibling::tei:person[1]/tei:persName[1]/tei:surname, 1, 1))"/>
+        <!-- Normalize diacritics and umlauts: Ż→Z, Ź→Z, Ä→A, Ö→O, Ü→U, etc. -->
+        <xsl:variable name="rawFirstLetter" select="upper-case(substring(tei:persName[1]/tei:surname, 1, 1))"/>
+        <xsl:variable name="firstLetter" select="
+            if ($rawFirstLetter = 'Ä') then 'A'
+            else if ($rawFirstLetter = 'Ö') then 'O'
+            else if ($rawFirstLetter = 'Ü') then 'U'
+            else translate($rawFirstLetter, 'ŻŹŽÇĆČŠŚŇÑ', 'ZZZCCCSSNÑ')"/>
 
-        <!-- Add letter heading if first person with this letter -->
-        <xsl:if test="$firstLetter != $prevFirstLetter">
+        <!-- Add letter heading only for the first person with this letter -->
+        <!-- Check if there are NO preceding siblings with the same first letter -->
+        <xsl:variable name="currentLetter" select="$firstLetter"/>
+        <xsl:if test="not(preceding-sibling::tei:person[
+            let $raw := upper-case(substring(tei:persName[1]/tei:surname, 1, 1))
+            return (if ($raw = 'Ä') then 'A'
+                    else if ($raw = 'Ö') then 'O'
+                    else if ($raw = 'Ü') then 'U'
+                    else translate($raw, 'ŻŹŽÇĆČŠŚŇÑ', 'ZZZCCCSSNÑ')) = $currentLetter])">
             <h3 id="letter-{$firstLetter}" class="mt-5 mb-3" style="scroll-margin-top: 80px;">
                 <xsl:value-of select="$firstLetter"/>
             </h3>
@@ -202,10 +214,10 @@
                 </xsl:if>
 
                 <!-- Seitenzahlen -->
-                <xsl:if test="tei:note[@type='page']">
+                <xsl:if test="tei:bibl/tei:biblScope[@unit='page']">
                     <div class="mt-2">
                         <small class="text-muted">Seiten: </small>
-                        <xsl:for-each select="tei:note[@type='page']">
+                        <xsl:for-each select="tei:bibl/tei:biblScope[@unit='page']">
                             <span class="badge bg-light text-dark page-ref">
                                 <xsl:value-of select="."/>
                             </span>
@@ -267,17 +279,17 @@
                 </h5>
 
                 <!-- Beschreibung -->
-                <xsl:if test="tei:note[not(@type='page')]">
+                <xsl:if test="tei:note">
                     <p class="card-text">
-                        <xsl:value-of select="tei:note[not(@type='page')]"/>
+                        <xsl:value-of select="tei:note"/>
                     </p>
                 </xsl:if>
 
                 <!-- Seitenzahlen -->
-                <xsl:if test="tei:note[@type='page']">
+                <xsl:if test="tei:bibl/tei:biblScope[@unit='page']">
                     <div class="mt-2">
                         <small class="text-muted">Seiten: </small>
-                        <xsl:for-each select="tei:note[@type='page']">
+                        <xsl:for-each select="tei:bibl/tei:biblScope[@unit='page']">
                             <span class="badge bg-light text-dark page-ref">
                                 <xsl:value-of select="."/>
                             </span>

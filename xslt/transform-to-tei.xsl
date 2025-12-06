@@ -66,28 +66,43 @@
         <xsl:variable name="position" select="count(preceding-sibling::P[@type = 'org']) + 1"/>
         <!-- Extract page numbers -->
         <xsl:variable name="pages" select="
-                if (matches($text, '\.[\s\p{L}]*[\s,]*[\d,\s]+$'))
+                if (matches($text, '\.[\s\p{L}]*[\s,]*[\d,\sff]+$'))
                 then
-                    replace($text, '^.*?\.\s*[^\d]*?([\d,\s]+)$', '$1')
+                    replace($text, '^.*?\.\s*[^\d]*?([\d,\sff]+)$', '$1')
                 else
                     ''"/>
         <!-- Extract organization name and description -->
         <xsl:variable name="textWithoutPages" select="
                 if ($pages != '')
                 then
-                    replace($text, '(\..*?)([\d,\s]+)$', '$1')
+                    replace($text, '(\..*?)([\d,\sff]+)$', '$1')
                 else
                     $text"/>
+
+        <!-- Check for | separator and split if present -->
+        <xsl:variable name="orgNamePart" select="
+                if (contains($textWithoutPages, '|'))
+                then normalize-space(substring-before($textWithoutPages, '|'))
+                else $textWithoutPages"/>
+        <xsl:variable name="descriptionPart" select="
+                if (contains($textWithoutPages, '|'))
+                then normalize-space(substring-after($textWithoutPages, '|'))
+                else ''"/>
+
         <!-- Extract name and description -->
         <!-- Try quoted names first, then unquoted names -->
         <xsl:choose>
             <!-- Pattern 1: Quoted organization name -->
-            <xsl:when test="matches($textWithoutPages, '^[&#x201E;&#x201C;&quot;]')">
-                <xsl:analyze-string select="$textWithoutPages"
+            <xsl:when test="matches($orgNamePart, '^[&#x201E;&#x201C;&quot;]')">
+                <xsl:analyze-string select="$orgNamePart"
                     regex="^[&#x201E;&#x201C;&quot;]([^&quot;&#x201C;]+)[&#x201C;&quot;]\s*\.?\s*(.*)$">
                     <xsl:matching-substring>
                         <xsl:variable name="orgName" select="regex-group(1)"/>
-                        <xsl:variable name="description" select="normalize-space(regex-group(2))"/>
+                        <xsl:variable name="afterName" select="normalize-space(regex-group(2))"/>
+                        <xsl:variable name="description" select="
+                            if ($descriptionPart != '')
+                            then $descriptionPart
+                            else $afterName"/>
                         <org xmlns="http://www.tei-c.org/ns/1.0">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of select="concat('ansorge_o_', $position)"/>
@@ -102,9 +117,11 @@
                             </xsl:if>
                             <!-- Add page numbers -->
                             <xsl:if test="$pages != ''">
-                                <xsl:call-template name="parsePages">
-                                    <xsl:with-param name="pages" select="normalize-space($pages)"/>
-                                </xsl:call-template>
+                                <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                    <xsl:call-template name="parsePages">
+                                        <xsl:with-param name="pages" select="normalize-space($pages)"/>
+                                    </xsl:call-template>
+                                </bibl>
                             </xsl:if>
                         </org>
                     </xsl:matching-substring>
@@ -112,10 +129,14 @@
             </xsl:when>
             <!-- Pattern 2: Unquoted organization name -->
             <xsl:otherwise>
-                <xsl:analyze-string select="$textWithoutPages" regex="^([^.]+)\.\s*(.*)$">
+                <xsl:analyze-string select="$orgNamePart" regex="^([^.]+)\.\s*(.*)$">
                     <xsl:matching-substring>
                         <xsl:variable name="orgName" select="normalize-space(regex-group(1))"/>
-                        <xsl:variable name="description" select="normalize-space(regex-group(2))"/>
+                        <xsl:variable name="afterName" select="normalize-space(regex-group(2))"/>
+                        <xsl:variable name="description" select="
+                            if ($descriptionPart != '')
+                            then $descriptionPart
+                            else $afterName"/>
                         <org xmlns="http://www.tei-c.org/ns/1.0">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of select="concat('ansorge_o_', $position)"/>
@@ -130,9 +151,11 @@
                             </xsl:if>
                             <!-- Add page numbers -->
                             <xsl:if test="$pages != ''">
-                                <xsl:call-template name="parsePages">
-                                    <xsl:with-param name="pages" select="normalize-space($pages)"/>
-                                </xsl:call-template>
+                                <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                    <xsl:call-template name="parsePages">
+                                        <xsl:with-param name="pages" select="normalize-space($pages)"/>
+                                    </xsl:call-template>
+                                </bibl>
                             </xsl:if>
                         </org>
                     </xsl:matching-substring>
@@ -267,9 +290,11 @@
                 </xsl:if>
                 <!-- Add page numbers as biblScope -->
                 <xsl:if test="$pages != ''">
-                    <xsl:call-template name="parsePages">
-                        <xsl:with-param name="pages" select="normalize-space($pages)"/>
-                    </xsl:call-template>
+                    <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                        <xsl:call-template name="parsePages">
+                            <xsl:with-param name="pages" select="normalize-space($pages)"/>
+                        </xsl:call-template>
+                    </bibl>
                 </xsl:if>
             </person>
         </xsl:if>
@@ -453,7 +478,7 @@
         <xsl:for-each select="tokenize($pages, ',')">
             <xsl:variable name="pageRange" select="normalize-space(.)"/>
             <xsl:if test="$pageRange != ''">
-                <note xmlns="http://www.tei-c.org/ns/1.0" type="page">
+                <biblScope xmlns="http://www.tei-c.org/ns/1.0" unit="page">
                     <!-- Check if it's a page range (e.g., "12–15"), single page with f/ff, or single page -->
                     <xsl:choose>
                         <!-- Page range like "12–15" -->
@@ -466,7 +491,7 @@
                                 </xsl:matching-substring>
                             </xsl:analyze-string>
                         </xsl:when>
-                        <!-- Page with "ff" like "232ff" -->
+                        <!-- Page with "f" or "ff" like "232f" or "232ff" -->
                         <xsl:when test="matches($pageRange, '^\d+ff?$')">
                             <xsl:analyze-string select="$pageRange" regex="^(\d+)(ff?)$">
                                 <xsl:matching-substring>
@@ -485,7 +510,7 @@
                             <xsl:value-of select="$pageRange"/>
                         </xsl:otherwise>
                     </xsl:choose>
-                </note>
+                </biblScope>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
