@@ -170,15 +170,22 @@
         <xsl:variable name="personId" select="generate-id($currentNode)"/>
         <!-- Extract page numbers: look for pattern after last sentence/description -->
         <!-- Page numbers are typically: space followed by digits, commas, spaces, ending with digits, f, or ff -->
+        <!-- Also recognize pattern: ") 123" (closing parenthesis followed by page numbers) -->
         <xsl:variable name="pages" select="
-                if (matches($text, '\.[\s\p{L}]*[\s,]*[\d,\sff]+$'))
+                if (matches($text, '\)\s+[\d,\sff]+$'))
+                then
+                    replace($text, '^.*?\)\s+([\d,\sff]+)$', '$1')
+                else if (matches($text, '\.[\s\p{L}]*[\s,]*[\d,\sff]+$'))
                 then
                     replace($text, '^.*?\.\s*[^\d]*?([\d,\sff]+)$', '$1')
                 else
                     ''"/>
         <!-- Remove page numbers from text -->
         <xsl:variable name="textWithoutPages" select="
-                if ($pages != '')
+                if ($pages != '' and matches($text, '\)\s+[\d,\sff]+$'))
+                then
+                    replace($text, '(\).*?)([\d,\sff]+)$', '$1')
+                else if ($pages != '')
                 then
                     replace($text, '(\..*?)([\d,\sff]+)$', '$1')
                 else
@@ -289,13 +296,27 @@
                     </note>
                 </xsl:if>
                 <!-- Add page numbers as biblScope -->
-                <xsl:if test="$pages != ''">
-                    <bibl xmlns="http://www.tei-c.org/ns/1.0">
-                        <xsl:call-template name="parsePages">
-                            <xsl:with-param name="pages" select="normalize-space($pages)"/>
-                        </xsl:call-template>
-                    </bibl>
-                </xsl:if>
+                <!-- Check for <bibl> child elements in source or extracted page numbers -->
+                <xsl:choose>
+                    <!-- If source has <bibl> elements, process them -->
+                    <xsl:when test="$currentNode/bibl">
+                        <xsl:for-each select="$currentNode/bibl">
+                            <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                                <xsl:call-template name="parsePages">
+                                    <xsl:with-param name="pages" select="normalize-space(.)"/>
+                                </xsl:call-template>
+                            </bibl>
+                        </xsl:for-each>
+                    </xsl:when>
+                    <!-- Otherwise use extracted page numbers from text -->
+                    <xsl:when test="$pages != ''">
+                        <bibl xmlns="http://www.tei-c.org/ns/1.0">
+                            <xsl:call-template name="parsePages">
+                                <xsl:with-param name="pages" select="normalize-space($pages)"/>
+                            </xsl:call-template>
+                        </bibl>
+                    </xsl:when>
+                </xsl:choose>
             </person>
         </xsl:if>
     </xsl:template>

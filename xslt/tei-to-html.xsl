@@ -125,7 +125,7 @@
 
     <!-- Alphabet Navigation Template -->
     <xsl:template name="alphabetNav">
-        <xsl:variable name="alphabet" select="('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ä', 'Ö', 'Ü')"/>
+        <xsl:variable name="alphabet" select="('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')"/>
         <xsl:for-each select="$alphabet">
             <a href="#letter-{.}" class="btn btn-sm btn-outline-primary">
                 <xsl:value-of select="."/>
