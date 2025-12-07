@@ -132,6 +132,7 @@
             </a>
         </xsl:for-each>
     </xsl:template>
+    
 
     <!-- Person Template -->
     <xsl:template match="tei:person">
