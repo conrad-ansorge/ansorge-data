@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(xxd:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(xsltproc:*)",
+      "Bash(listperson.csv)"
     ],
     "deny": [],
     "ask": []
