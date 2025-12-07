@@ -39,6 +39,9 @@
             </text>
         </TEI>
     </xsl:template>
+    <!-- Suppress bibl elements from source XML (they are processed separately) -->
+    <xsl:template match="bibl"/>
+
     <!-- Template for reference entries (type='ref') -->
     <xsl:template match="P[@type = 'ref']">
         <xsl:variable name="text" select="normalize-space(.)"/>
@@ -165,14 +168,21 @@
     </xsl:template>
     <!-- Template for person entries -->
     <xsl:template match="P">
-        <xsl:variable name="text" select="normalize-space(.)"/>
         <xsl:variable name="currentNode" select="."/>
         <xsl:variable name="personId" select="generate-id($currentNode)"/>
+        <!-- Get text content, excluding <bibl> child elements -->
+        <xsl:variable name="text" select="
+            if ($currentNode/bibl)
+            then normalize-space(string-join($currentNode/text(), ' '))
+            else normalize-space($currentNode)"/>
         <!-- Extract page numbers: look for pattern after last sentence/description -->
         <!-- Page numbers are typically: space followed by digits, commas, spaces, ending with digits, f, or ff -->
         <!-- Also recognize pattern: ") 123" (closing parenthesis followed by page numbers) -->
+        <!-- But only if there are NO <bibl> child elements (those are handled separately) -->
         <xsl:variable name="pages" select="
-                if (matches($text, '\)\s+[\d,\sff]+$'))
+                if ($currentNode/bibl)
+                then ''
+                else if (matches($text, '\)\s+[\d,\sff]+$'))
                 then
                     replace($text, '^.*?\)\s+([\d,\sff]+)$', '$1')
                 else if (matches($text, '\.[\s\p{L}]*[\s,]*[\d,\sff]+$'))
@@ -453,20 +463,26 @@
         <!-- Parse birth and death dates -->
         <xsl:analyze-string select="$datesClean" regex="^([^–—-]+?)[–—-]([^–—-]+)$">
             <xsl:matching-substring>
-                <birth xmlns="http://www.tei-c.org/ns/1.0">
-                    <xsl:variable name="birthYear" select="normalize-space(regex-group(1))"/>
-                    <xsl:if test="matches($birthYear, '^\d\d\d\d$')">
-                        <xsl:attribute name="when" select="$birthYear"/>
-                    </xsl:if>
-                    <xsl:value-of select="$birthYear"/>
-                </birth>
-                <death xmlns="http://www.tei-c.org/ns/1.0">
-                    <xsl:variable name="deathYear" select="normalize-space(regex-group(2))"/>
-                    <xsl:if test="matches($deathYear, '^\d\d\d\d$')">
-                        <xsl:attribute name="when" select="$deathYear"/>
-                    </xsl:if>
-                    <xsl:value-of select="$deathYear"/>
-                </death>
+                <xsl:variable name="birthYear" select="normalize-space(regex-group(1))"/>
+                <xsl:variable name="deathYear" select="normalize-space(regex-group(2))"/>
+                <!-- Only output birth element if not just "?" -->
+                <xsl:if test="$birthYear != '?'">
+                    <birth xmlns="http://www.tei-c.org/ns/1.0">
+                        <xsl:if test="matches($birthYear, '^\d\d\d\d$')">
+                            <xsl:attribute name="when" select="$birthYear"/>
+                        </xsl:if>
+                        <xsl:value-of select="$birthYear"/>
+                    </birth>
+                </xsl:if>
+                <!-- Only output death element if not just "?" -->
+                <xsl:if test="$deathYear != '?'">
+                    <death xmlns="http://www.tei-c.org/ns/1.0">
+                        <xsl:if test="matches($deathYear, '^\d\d\d\d$')">
+                            <xsl:attribute name="when" select="$deathYear"/>
+                        </xsl:if>
+                        <xsl:value-of select="$deathYear"/>
+                    </death>
+                </xsl:if>
             </xsl:matching-substring>
             <xsl:non-matching-substring>
                 <!-- Single date (birth or death only) -->

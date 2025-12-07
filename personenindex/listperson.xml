@@ -182,10 +182,10 @@
                </persName>
                <birth when="1851">1851</birth>
                <death when="1898">1898</death>
-               <note>Dt. Tenor, der als ausgebildeter Architekt nach seiner Gesangsausbildung rasch zu einem der berühmtesten Sänger seiner Zeit sowohl in Europa wie auch an der Metropolitan Opera avancierte. Sein romantisches Leben wurde durch einen tragischen Bühnenunfall früh beendet, legendär waren seine Interpretationen des Siegfried und Tristan. 83, 85–86</note>
+               <note>Dt. Tenor, der als ausgebildeter Architekt nach seiner Gesangsausbildung rasch zu einem der berühmtesten Sänger seiner Zeit sowohl in Europa wie auch an der Metropolitan Opera avancierte. Sein romantisches Leben wurde durch einen tragischen Bühnenunfall früh beendet, legendär waren seine Interpretationen des Siegfried und Tristan.</note>
                <bibl>
                   <biblScope unit="page" n="83">83</biblScope>
-                  <biblScope unit="page" from="85" to="86">85–86</biblScope>
+                  <biblScope unit="page" from="85">85f</biblScope>
                </bibl>
             </person>
             <person xml:id="ansorge_p_12">
@@ -374,7 +374,6 @@
                   <forename>Ulrike</forename>
                </persName>
                <birth when="1895">1895</birth>
-               <death>?</death>
                <note>Tochter von Conrad und →Margarethe Ansorge. Am Tag ihrer Geburt lernten An-sorge und →Dehmel sich kennen, wie der Komponist am 15.11.1916 schreibt.</note>
                <bibl>
                   <biblScope unit="page" n="14">14</biblScope>
@@ -404,7 +403,7 @@
                </persName>
                <birth when="1850">1850</birth>
                <death when="1919">1919</death>
-               <note>Dt. Salonnière, deren vorwiegend literarischer Salon am Nollendorfplatz 7 in Berlin von 1910 bis 1914 als einer der bedeutendsten gesellschaftlichen Treffpunkte in dieser Zeit galt. 50–51</note>
+               <note>Dt. Salonnière, deren vorwiegend literarischer Salon am Nollendorfplatz 7 in Berlin von 1910 bis 1914 als einer der bedeutendsten gesellschaftlichen Treffpunkte in dieser Zeit galt.</note>
                <bibl>
                   <biblScope unit="page" from="50" to="51">50–51</biblScope>
                </bibl>
@@ -435,7 +434,7 @@
                </persName>
                <birth when="1870">1870</birth>
                <death when="1942">1942</death>
-               <note>Dt. Lyrikerin und Frauenrechtlerin, Jugendfreundin Stefan Georges, zunächst verh. mit Konsul Leopold Auerbach in Berlin, bevor sie 1895 Richard Dehmel kennenlernte, dessen zweite Ehefrau sie wurde. 29, 48, 107, 233f, 244f, 253, 259, 261, 264, 266f, 269, 272f, 275, 279, 281f, 283ff, 288, 290f, 293f, 297, 299ff, 307, 310, 313f, 316, 320f, 321, 326ff, 333, 336, 339, 341f, 344, 347, 351f, 354ff, 358ff, 366ff, 373ff, 561, 576, 656, 665–666</note>
+               <note>Dt. Lyrikerin und Frauenrechtlerin, Jugendfreundin Stefan Georges, zunächst verh. mit Konsul Leopold Auerbach in Berlin, bevor sie 1895 Richard Dehmel kennenlernte, dessen zweite Ehefrau sie wurde.</note>
                <bibl>
                   <biblScope unit="page" n="29">29</biblScope>
                   <biblScope unit="page" n="48">48</biblScope>
@@ -587,7 +586,6 @@
                   <forename>Michael</forename>
                </persName>
                <birth when="1868">1868</birth>
-               <death>?</death>
                <note>US-amerik. Geiger (Biographie in Bainard’s Musical World XXVI (1889), S. 324ff.).</note>
                <bibl>
                   <biblScope unit="page" n="84">84</biblScope>
@@ -686,7 +684,6 @@
                   <forename>Claudia</forename>
                </persName>
                <birth when="1896">1896</birth>
-               <death>?</death>
                <note>Tschech. Pianistin und Ansorge-Schülerin.</note>
                <bibl>
                   <biblScope unit="page" n="683">683</biblScope>
@@ -708,7 +705,7 @@
                </persName>
                <birth when="1842">1842</birth>
                <death when="1924">1924</death>
-               <note>Dt. Geiger, Chordirigent und Komponist, vorwiegend von Liedern und Chormusik, dessen I. Violinkonzert op. 4 aus dem Jahr 1876 sich großer Beliebtheit erfreute. (Reinhold Becker, sein Leben und sein Werk, hg. im Auftrag des Vereins für Geschichte Dresdens. Dresden 1932. Siehe auch: http://www.adorf-vogtland.de/inhalte/adorf/_inhalt/freizeit_tourismus/musik/musiker/becker/dresd ner_salonblatt_1908_r_becker.pdf , zuletzt besucht am 22.08.2015.)</note>
+               <note>Dt. Geiger, Chordirigent und Komponist, vorwiegend von Liedern und Chormusik, dessen I. Violinkonzert op. 4 aus dem Jahr 1876 sich großer Beliebtheit erfreute. (Reinhold Becker, sein Leben und sein Werk, hg. im Auftrag des Vereins für Geschichte Dresdens. Dresden 1932. Siehe auch: , zuletzt besucht am 22.08.2015.)</note>
                <bibl>
                   <biblScope unit="page" n="72">72</biblScope>
                   <biblScope unit="page" n="124">124</biblScope>
@@ -756,7 +753,6 @@
                   <forename>Hermann</forename>
                </persName>
                <birth when="1875">1875</birth>
-               <death>?</death>
                <note>Dt. Geiger, Chorleiter und Dirigent des Breslauer Orchestervereins. (Hermann Behr. Denkschrift zur Feier des 50-jährigen Bestehens des Breslauer Orchester-Vereins. Breslau 1912, vgl. https://www.gko.uni-leipzig.de/fileadmin/user_upload/musikwissenschaft/pdf_allgemein/arbeitsgemeinschaft/1314_subel.pdf, zuletzt besucht am 22.08.2015.)</note>
                <bibl>
                   <biblScope unit="page" n="155">155</biblScope>
@@ -836,7 +832,6 @@
                   <forename>Marie</forename>
                </persName>
                <birth when="1874">1874</birth>
-               <death>?</death>
                <note>Dt. Sängerin (Sopran) und Pädagogin. Gemeinsam mit Amalie Joachim sang sie beim Merseburger Brahms-Fest 1895 das Duett op. 61/2 von Johannes Brahms, der selbst am Klavier begleitete (vgl. Gustav Adolf Müller (Hg.). Deutschlands, Osterreich-Ungarns und der Schweiz Gelehrte, Künstler und Schriftsteller in Wort und Bild. Hannover: Bruno Volger 1908, S. 40; sowie http://www.brahms-institut.de/ web/bihl_digital/jb_werkekatalog/op_061.html, zuletzt besucht am 29.08.2015).</note>
                <bibl>
                   <biblScope unit="page" n="94">94</biblScope>
@@ -894,7 +889,7 @@
                </persName>
                <birth when="1862">1862</birth>
                <death when="1937">1937</death>
-               <note>Dt. Lehrer für Mathematik und Naturwissenschaften in Mannheim, mit Dehmel und Hans Thoma befreundet, studierte Kunst-und Musikgeschichte, Literatur und Philosophie an der Universität Heidelberg, Veröffentlichungen zur Malerei des 19. Jhds. am Oberrhein. Mitglied der Badischen Historischen Kommission und Denkmalpfleger für den Kreis Mannheim. 1933 erhielt er als Anerkennung für seine Leistungen vom Staatsministerium den Professorentitel verliehen. (Vgl. https://www2. landesarchiv-bw.de/ofs21/olf/start.php?bestand=14864 (Landesarchiv Baden-Württemberg), zuletzt besucht am 19.08.2015)</note>
+               <note>Dt. Lehrer für Mathematik und Naturwissenschaften in Mannheim, mit Dehmel und Hans Thoma befreundet, studierte Kunst-und Musikgeschichte, Literatur und Philosophie an der Universität Heidelberg, Veröffentlichungen zur Malerei des 19. Jhds. am Oberrhein. Mitglied der Badischen Historischen Kommission und Denkmalpfleger für den Kreis Mannheim. 1933 erhielt er als Anerkennung für seine Leistungen vom Staatsministerium den Professorentitel verliehen. (Vgl. Baden-Württemberg), zuletzt besucht am 19.08.2015)</note>
                <bibl>
                   <biblScope unit="page" n="274">274</biblScope>
                   <biblScope unit="page" n="284">284</biblScope>
@@ -982,7 +977,6 @@
                   <forename>Albert</forename>
                </persName>
                <birth when="1884">1884</birth>
-               <death>?</death>
                <note>Dt. Pianist, Dirigent und Komponist; Pfitzner-Schüler und Lehrer von Kurt Weill. Seine Frau Edith (1883–?) war die Schwester des Dramatikers Carl Sternheim (1878–1942).</note>
                <bibl>
                   <biblScope unit="page" n="219">219</biblScope>
@@ -1146,7 +1140,6 @@
                   <forename>Michael</forename>
                </persName>
                <birth when="1849">1849</birth>
-               <death>?</death>
                <note>US-amerik.? Cellist und Dirigent.</note>
                <bibl>
                   <biblScope unit="page" n="83">83</biblScope>
@@ -1158,7 +1151,6 @@
                   <forename>Arthur</forename>
                </persName>
                <birth when="1875">1875</birth>
-               <death>?</death>
                <note>Dt. Geiger.</note>
                <bibl>
                   <biblScope unit="page" n="188">188</biblScope>
@@ -1194,7 +1186,6 @@
                   <forename>Dorothea Marcella</forename>
                </persName>
                <birth when="1903">1903</birth>
-               <death>?</death>
                <note>Dt.-brit. Pianistin, Schülerin Ansorges.</note>
                <bibl>
                   <biblScope unit="page" n="683">683</biblScope>
@@ -1250,7 +1241,6 @@
                   <forename>Paul Eduard Ferdinand</forename>
                </persName>
                <birth when="1850">1850</birth>
-               <death>?</death>
                <note>Dt. (Hof-)Organist in Dresden.</note>
                <bibl>
                   <biblScope unit="page" n="70">70</biblScope>
@@ -1351,7 +1341,6 @@
                   <forename>Fritz</forename>
                </persName>
                <birth when="1890">1890</birth>
-               <death>?</death>
                <note>Österr. Geiger, Mitglied der Wiener Philharmoniker.</note>
                <bibl>
                   <biblScope unit="page" n="439">439</biblScope>
@@ -1410,7 +1399,6 @@
                   <surname>Burath</surname>
                   <forename>Hugo</forename>
                </persName>
-               <birth>?</birth>
                <death when="1949">1949</death>
                <note>Dt.? Literaturhistoriker, veröffentlichte 1948 „August Klingemann und die deutsche Romantik“.</note>
                <bibl>
@@ -1628,7 +1616,6 @@
                   <forename>Iwan</forename>
                </persName>
                <birth when="1890">1890</birth>
-               <death>?</death>
                <note>Älterer Sohn von →Evans und Claire C., war im I. Weltkrieg als Kapitänleutnant Mitglied in der Marine (Marine-Offizier-Verband (Hg.). Die Ehrenrangliste der Kaiserlich Deutschen Marine 1914–1918. Berlin 1930, S. 287) und dokumentierte daselbst einen für die weitere Kriegspolitik einflussreichen U-Boot-Vorfall („U 41“; der zweite „Baralong“-Fall, selbst erzählt von Oberleutnant z. S. Crompton. Mit acht Bildern. Berlin: A. Scherl 1917).</note>
             </person>
             <person xml:id="ansorge_p_114">
@@ -1637,7 +1624,6 @@
                   <forename>Otto</forename>
                </persName>
                <birth when="1892">1892</birth>
-               <death>?</death>
                <note>Jüngerer Sohn von →Evans und Claire, stellte 1919 eine eigene Anfrage an das Heroldsamt in Berlin, wie es denn um seinen ihm schon im Taufschein zugedachten Adelstitel bestellt sei. Aufgrund seiner Anfrage wurden dem Heroldsamt zahlreiche Tauf-, Heirats-und Sterbeurkunden zugänglich gemacht, die den Hergang des Titelgebrauchs schließlich offenlegten.</note>
             </person>
             <person xml:id="ansorge_p_115">
@@ -1697,7 +1683,6 @@
                   <forename>Reinhold Hugo</forename>
                </persName>
                <birth when="1877">1877</birth>
-               <death>?</death>
                <note>Dt. Musikpädagoge, edierte u. a. die Sammlung „Das deutsche Lied“.</note>
                <bibl>
                   <biblScope unit="page" n="214">214</biblScope>
@@ -2388,7 +2373,6 @@
                   <forename>Fritz</forename>
                </persName>
                <birth when="1862">1862</birth>
-               <death>?</death>
                <note>Dt. Cellist, kgl. Kammervirtuose, seit 1887 an der Hofoper Berlin engagiert. Widmungsträger des Klaviertrios op. 55 von Gustav Lazarus (1861–1920). 135 Essek, Paul (1875–1948). Dt.-schweiz. Bratschist, ab 1903 Mitglied im Tonhalle-Orchester Zürich. 162, 662 Esterházy de Galántha, Maria, genannt Mysa (1859–1926). Österr.-Ung. Fürstin, heiratete 1883 August von Wydenbruck. Einflussreiche Musikmäzenin, die selbst Gesang bei Mathilde Marchesi studiert hatte. Sie war befreundet mit Mahler und Schnitzler sowie zahlreichen anderen Künstlern und Musikern der Zeit (vgl. Nachruf am 24.08.1926 im Neuen Wiener Journal). →Arnold Rosé hatte sie u. a. eine Stradivari Geige aus dem Jahre 1718 geschenkt und öffnete auch Mark Twain bei dessen Wien-Aufenthalt die Türen zur Wiener Gesellschaft. Gemeinsam mit Pauline Metternich war sie eine der zuverlässigsten Trägerinnen der Wiener Wohlfahrtspflege und Künstlerfürsorge (gem. m. Prinzessin Rosa Croy und Gräfin →Anastasia Kielmannsegg).</note>
                <bibl>
                   <biblScope unit="page" n="489">489</biblScope>
@@ -2665,7 +2649,6 @@
                   <forename>Felix</forename>
                </persName>
                <birth when="1879">1879</birth>
-               <death>?</death>
                <note>Österr. Jurist und Theaterkritiker. Mitbegründer des Ansorge-Vereins und Gründer des Vereins »Intimes Theater« in Wien 1904, der gemeinsam mit dem Regisseur und Dramaturgen Oskar Friedmann anlässlich der 200. Aufführung am 2. Februar 1906 eine beachtliche Bilanz von Erstaufführungen von Werken Strindbergs, →Schlafs, Wedekinds, →Przybyszewskis, Maeterlincks u. a. vorweisen konnte. (Franz Hadamowsky. Wien – Theatergeschichte. Wien 1994, S. 762ff.)</note>
                <bibl>
                   <biblScope unit="page" from="386">386ff</biblScope>
@@ -2802,7 +2785,6 @@
                   <forename>Anton</forename>
                </persName>
                <birth when="1867">1867</birth>
-               <death>?</death>
                <note>Dt. Pianist, Schüler des Leizpiger Konservatoriums. Er unterrichtete von 1897–1904 am Stern’schen Konservatorium und folgte 1904 Ansorge als Lehrer am Klindworth-Scharwenka Konservatorium, spätestens 1906 verließ er Europa und ging nach New York (R. M. Breithaupt. Die natürliche Klaviertechnik. Leipzig: Kahnt 1906, S. 675).</note>
                <bibl>
                   <biblScope unit="page" n="93">93</biblScope>
@@ -2849,7 +2831,6 @@
                   <forename>Wilhelm</forename>
                </persName>
                <birth when="1890">1890</birth>
-               <death>?</death>
                <note>Dt. Sänger (Tenor).</note>
                <bibl>
                   <biblScope unit="page" n="226">226</biblScope>
@@ -2896,7 +2877,6 @@
                   <forename>Karl Otto</forename>
                </persName>
                <birth when="1855">1855</birth>
-               <death>?</death>
                <note>Dt. Gymnasial-Oberlehrer in Weimar (vgl. Rudolf Steiner. Schriften aus dem Nachlass).</note>
                <bibl>
                   <biblScope unit="page" n="242">242</biblScope>
@@ -4341,7 +4321,6 @@
                   <forename>Berthold</forename>
                </persName>
                <birth when="1870">1870</birth>
-               <death>?</death>
                <note>Dt. Geiger, schrieb 1912 eine Einführung mit dem Titel: „Konzentrierter Lehrgang der Violin-Technik“.</note>
                <bibl>
                   <biblScope unit="page" n="149">149</biblScope>
@@ -4353,7 +4332,6 @@
                   <forename>Georg</forename>
                </persName>
                <birth when="1873">1873</birth>
-               <death>?</death>
                <note>Dt. Komponist und Musikpädagoge.</note>
                <bibl>
                   <biblScope unit="page" n="150">150</biblScope>
@@ -4402,7 +4380,6 @@
                   <forename>Maria</forename>
                </persName>
                <birth when="1901">1901</birth>
-               <death>?</death>
                <note>Dt. Pianistin, Ansorgeschülerin.</note>
                <bibl>
                   <biblScope unit="page" n="684">684</biblScope>
@@ -4529,7 +4506,6 @@
                   <forename>Marie</forename>
                </persName>
                <birth when="1868">1868</birth>
-               <death>?</death>
                <note>Dt. Sängerin (Mezzo), war von 1892–1897 an der Berliner Hofoper engagiert. Nach ihrer Heirat mit dem Schauspieler Ludwig Hertzer (1854–1928) trat sie nur noch in Gastspielen auf.</note>
                <bibl>
                   <biblScope unit="page" n="143">143</biblScope>
@@ -4663,7 +4639,6 @@
                   <forename>Otti</forename>
                </persName>
                <birth when="1878">1878</birth>
-               <death>?</death>
                <note>Dt. Sängerin (Dram. Sopran), studierte zuerst Klavier bei Karl Klindworth, war von 1910– 1917 mit dem Riemann-Schüler Herman Roth (1882–1938) verh., übersiedelte ab 1921 nach Wien und wirkte als Gesangspädagogin.</note>
                <bibl>
                   <biblScope unit="page" n="131">131</biblScope>
@@ -5012,7 +4987,6 @@
                   <forename>Josa</forename>
                </persName>
                <birth when="1875">1875</birth>
-               <death>?</death>
                <note>Österr. Pianistin, unterrichtete zumindest von 1912–1915 an der Wiener Musik-Akademie (vgl. den Hinweis aus dem Personalakt Walther Gmeindl, Archiv der Universität für Musik und darstellende Kunst Wien).</note>
                <bibl>
                   <biblScope unit="page" n="421">421</biblScope>
@@ -5120,7 +5094,6 @@
                   <forename>Hubert</forename>
                </persName>
                <birth when="1881">1881</birth>
-               <death>?</death>
                <note>Dt. Cellist.</note>
                <bibl>
                   <biblScope unit="page" n="152">152</biblScope>
@@ -5441,7 +5414,6 @@
                   <forename>Kurt</forename>
                </persName>
                <birth when="1894">1894</birth>
-               <death>?</death>
                <note>Dt. Cellist.</note>
                <bibl>
                   <biblScope unit="page" n="174">174</biblScope>
@@ -5710,7 +5682,6 @@
                   <forename>Alfred</forename>
                </persName>
                <birth when="1850">1850</birth>
-               <death>?</death>
                <note>Dt. Komponist und Organist, Schüler von Cornelius Gurlitt, an der Hamburger Nikolaikirche tätig.</note>
                <bibl>
                   <biblScope unit="page" n="138">138</biblScope>
@@ -5737,7 +5708,6 @@
                   <forename>auch Tolli Cilla</forename>
                </persName>
                <birth>1870/72</birth>
-               <death>?</death>
                <note>Dt. Sängerin (Mezzosopran).</note>
                <bibl>
                   <biblScope unit="page" n="99">99</biblScope>
@@ -5865,7 +5835,6 @@
                   <forename>jr.</forename>
                </persName>
                <birth when="1877">1877</birth>
-               <death>?</death>
                <note>Dt. Komponist und Sänger (Bass), Sohn des Bass-Baritons Bernhard Köhler (1847–1919). Engagements u. a. in St. Gallen (1907–1909) und Freiburg i. Br. (1919–1925) (siehe dazu: Karl J. Kutsch; Leo Riemens. Grosses Sängerlexikon. München 42003, Bd. 4, S. 2434).</note>
                <bibl>
                   <biblScope unit="page" n="128">128</biblScope>
@@ -6149,7 +6118,6 @@
                   <forename>Viktor</forename>
                </persName>
                <birth when="1867">1867</birth>
-               <death>?</death>
                <note>Österr. Dirigent und Offizier. Studierte zunächst Philosophie sowie Dirigieren bei Nikisch und Komposition bei Schönberg, war später als Geschäftsmann tätig und emigrierte nach Santiago de Chile.</note>
                <bibl>
                   <biblScope unit="page" n="437">437</biblScope>
@@ -6192,7 +6160,6 @@
                   <forename>Emil</forename>
                </persName>
                <birth>1866/67</birth>
-               <death>?</death>
                <note>Dt., in Prag geborener Geiger und Komponist, von 1899 an Direktor des Königsberger Konservatoriums.</note>
                <bibl>
                   <biblScope unit="page" n="18">18</biblScope>
@@ -6472,7 +6439,6 @@
                   <surname>Gilbert</surname>
                </persName>
                <birth when="1888">1888</birth>
-               <death>?</death>
                <note>Dt. Liedsängerin, Tochter von →Otto Lessmann.</note>
                <bibl>
                   <biblScope unit="page" n="143">143</biblScope>
@@ -6724,7 +6690,6 @@
                   <forename>Albrecht</forename>
                </persName>
                <birth when="1867">1867</birth>
-               <death>?</death>
                <note>Dt. Cellist, Widmungsträger der Serenade für Violine, Viola und Violoncello des schwedischen Komponisten Knut Håkanson (1887–1929).</note>
                <bibl>
                   <biblScope unit="page" n="149">149</biblScope>
@@ -6952,7 +6917,6 @@
                <persName type="geboren">
                   <surname>Saatz</surname>
                </persName>
-               <birth>?</birth>
                <death when="1960">1960</death>
                <note>Dt. Sängerin, seit 1923 Ehefrau des Industriellen →Paul Mamroth, studierte 1897–1902 am Stern’schen Konservatorium Gesang bei Selma Nicklass-Kempner.</note>
                <bibl>
@@ -7174,7 +7138,6 @@
                   <forename>Georg Anton</forename>
                </persName>
                <birth when="1879">1879</birth>
-               <death>?</death>
                <note>Dt. Kunsthistoriker, von 1910 bis 1917 verh. mit der Schauspielerin Lucie Höflich und regelmäßiger Gast im Gut Neu-Kladow bei →Johannes Guthmann.</note>
                <bibl>
                   <biblScope unit="page" n="54">54</biblScope>
@@ -7225,7 +7188,6 @@
                   <forename>Josef</forename>
                </persName>
                <birth when="1859">1859</birth>
-               <death>?</death>
                <note>Österr. Cellist, Schüler von Franz Hegenbarth in Prag, ab 1878 Solocellist des Breslauer Orchestervereins (vgl. Violoncellisten der Gegenwart in Wort und Bild. Hamburg: Verlagsanstalt 1903, S. 134–135).</note>
                <bibl>
                   <biblScope unit="page" n="107">107</biblScope>
@@ -7504,7 +7466,6 @@
                   <forename>Martin</forename>
                </persName>
                <birth when="1885">1885</birth>
-               <death>?</death>
                <note>Dt. Bildhauer, studierte an der Kunstschule in Breslau und der Akademie der Künste in Berlin. Er war Mitglied der Berliner Secession, die von ihm gestaltete Büste von Conrad Ansorge aus dem Jahr 1917 wird in der Nationalgalerie Berlin aufbewahrt. 1923/24 war er in Los Angeles als künstlerischer Filmberater tätig, 1930 lebte er in Rom.</note>
                <bibl>
                   <biblScope unit="page" n="537">537</biblScope>
@@ -7747,7 +7708,6 @@
                   <forename>Helene</forename>
                </persName>
                <birth when="1876">1876</birth>
-               <death>?</death>
                <note>Österr. Sängerin (Sopran), erstes Bühnenengagement an der Hofoper in Dresden 1898/99, danach Olmütz, Linz und Graz. Sie wurde an die Volksoper von →Zemlinsky engagiert. Als erste Wiener Tosca wurde sie in der Rolle 1907 von R. Gerstl porträtiert (das Werk wurde im II. WK zerstört), sie leitete von 1911 bis 1918 das Wiener Stadionkino.</note>
                <bibl>
                   <biblScope unit="page" n="432">432</biblScope>
@@ -7759,7 +7719,6 @@
                   <forename>Marx E.</forename>
                </persName>
                <birth when="1876">1876</birth>
-               <death>?</death>
                <note>Amerik. Pianist und Klavierbegleiter. 171, 675 Obrist, Aloys (1867–1910). Dt. Dirigent und Musikwissenschaftler, Bruder des Bildhauers Hermann O. 1895– 1900 in Stuttgart als Hofkapellmeister am Staatstheater.</note>
                <bibl>
                   <biblScope unit="page" from="107">107f</biblScope>
@@ -7855,7 +7814,6 @@
                   <forename>Ilka von</forename>
                </persName>
                <birth when="1884">1884</birth>
-               <death>?</death>
                <note>Dt. Sängerin (Sopran).</note>
                <bibl>
                   <biblScope unit="page" n="437">437</biblScope>
@@ -8004,7 +7962,6 @@
                   <forename>auch Peter Olden</forename>
                </persName>
                <birth when="1876">1876</birth>
-               <death>?</death>
                <note>Dt. Pianist und Komponist, war 1904–1910 Direktor eines Gothaer Konservatoriums, danach in Berlin.</note>
                <bibl>
                   <biblScope unit="page" n="158">158</biblScope>
@@ -8028,7 +7985,6 @@
                   <forename>Irma M.</forename>
                </persName>
                <birth when="1897">1897</birth>
-               <death>?</death>
                <note>Tschech. Sängerin (Sopran).</note>
                <bibl>
                   <biblScope unit="page" n="204">204</biblScope>
@@ -8403,7 +8359,6 @@
                   <forename>Clara</forename>
                </persName>
                <birth>um 1880/90?</birth>
-               <death>?</death>
                <note>Dt. Sängerin (Alt), in München tätig, zahlreiche Zueignungen von Max Reger.</note>
             </person>
             <person xml:id="ansorge_p_589">
@@ -8676,7 +8631,6 @@
                   <surname>Winand</surname>
                </persName>
                <birth>1884/89</birth>
-               <death>?</death>
                <note>Österr. Schriftstellerin („Der andere Tod“. Novellen. Berlin: Erich Reiß Verlag. o. J. und 1920; „Pierrot im Schnee“. Berlin: Erich Reiß Verlag. o. J. und 1913; „Schwester der Vierten Armee“. Ein Kriegstagebuch. Berlin: Voegels 1930).</note>
             </person>
             <person xml:id="ansorge_p_610">
@@ -8723,7 +8677,6 @@
                   <forename>Hermann</forename>
                </persName>
                <birth when="1854">1854</birth>
-               <death>?</death>
                <note>Schles. Textilindustrieller, Freimaurer.</note>
                <bibl>
                   <biblScope unit="page" n="168">168</biblScope>
@@ -9111,7 +9064,6 @@
                   <forename>Emil</forename>
                </persName>
                <birth>um 1860</birth>
-               <death>?</death>
                <note>US-amerik. Cellist, für kurze Zeit Solocellist in →Th. Thomas’ Orchester.</note>
                <bibl>
                   <biblScope unit="page" n="89">89</biblScope>
@@ -9578,7 +9530,6 @@
                   <forename>Iwan</forename>
                </persName>
                <birth when="1861">1861</birth>
-               <death>?</death>
                <note>Dt.? Geiger und Kapellmeister.</note>
             </person>
             <person xml:id="ansorge_p_674">
@@ -10009,7 +9960,6 @@
                   <forename>Marie Mathilde von</forename>
                </persName>
                <birth when="1885">1885</birth>
-               <death>?</death>
                <note>Dt. Sängerin (Mezzo-Sopran) und Gesangspädagogin an der Akademie für Sprache, Bewegung und Musik Münster.</note>
                <bibl>
                   <biblScope unit="page" n="164">164</biblScope>
@@ -10111,7 +10061,6 @@
                   <forename>Wally</forename>
                </persName>
                <birth when="1861">1861</birth>
-               <death>?</death>
                <note>Dt.-balt. Sängerin (Sopran).</note>
                <bibl>
                   <biblScope unit="page" n="74">74</biblScope>
@@ -10259,7 +10208,6 @@
                   <forename>Franz</forename>
                </persName>
                <birth>1880?</birth>
-               <death>?</death>
                <note>Ung. Sänger (Bariton), Schüler von J. Ress und →J. Messchaert, lebte in Wien.</note>
                <bibl>
                   <biblScope unit="page" n="439">439</biblScope>
@@ -11302,7 +11250,6 @@
                   <surname>Wallborg-Ohm</surname>
                   <forename>Hedwig</forename>
                </persName>
-               <birth>?</birth>
                <death>nach 1927</death>
                <note>Dt. Sängerin und Gesangspädagogin. (Eintrag im „Amtlichen Adressbuch der Stadt Jena 1927/28“, S. 160)</note>
                <bibl>
@@ -11425,7 +11372,6 @@
                   <surname>Wegelin</surname>
                   <forename>Albert/Alfred</forename>
                </persName>
-               <birth>?</birth>
                <death when="1888">1888</death>
                <note>Ehemann von →Sophie W, Vater von →Margarethe Ansorge. Albert (auch Alfred) Wegelin war 1869 als Gesellschafter in das Maschinenbauunternehmen Hübner in Halle eingetreten, das bis zur Enteignung in der DDR florierte. Margarethe war die zweite von drei Töchtern, ihre Schwester Claire heiratete →Evans Crompton in Weimar. Von der jüngeren Schwester Hanni wird in den Briefen →Ansorges und →Rudolf Steiners berichtet, sie verlobte sich 1898 (Brief A 121). Die Verlobungsanzeige vom 24. August 1890 (M. eheliche „Herrn Conrad Ansorge aus New York“) und die Menükarte des Hochzeitsmahls von Margarethe und Conrad am 14. Juli 1891 hat sich im Nachlass in Berlin erhalten.</note>
                <bibl>
@@ -11467,7 +11413,6 @@
                <persName type="eigentlich">
                   <name>Margaret Elizabeth Edith Alderhead</name>
                </persName>
-               <birth>?</birth>
                <death>nach 1927</death>
                <note>Konzertsängerin in London, Assistentin von Raimund von Zur Mühlen, „ist eine reizvolle, durchgeistigte Erscheinung. Sie kann sehr viel, und beim Singen spricht ein fast feierlicher Ernst aus ihrem Gesicht, […] verfügt sie wohl über die vollkommenste Technik und kann mit ihrer nicht starken Stimme daher alles machen, was sie will.“ (Monika Hunnius. Mein Weg zur Kunst. Heilbronn: Eugen Salzer 1924, siehe dazu http://gutenberg.spiegel.de/ buch/4367/4 , zuletzt besucht am 20.08.2015)</note>
                <bibl>
@@ -11487,7 +11432,6 @@
                   <forename>Max</forename>
                </persName>
                <birth when="1877">1877</birth>
-               <death>?</death>
                <note>Dt.? Naturwissenschaftler, Dissertation über „Die Bedeutung des Experimentes für den Unterricht in der Chemie“ (=Sammlung naturwissenschaftlich-pädagogischer Abhandlungen; 2,1) Leipzig: Teubner 1905.</note>
                <bibl>
                   <biblScope unit="page" n="461">461</biblScope>
@@ -11775,7 +11719,6 @@
                   <forename>Fritz</forename>
                </persName>
                <birth when="1874">1874</birth>
-               <death>?</death>
                <note>Dt. Pianist (Korrepetitor). 134 Williams, Gus (1847–1915). US-amerik. Schauspieler und Komponist vor allem humoristischer Lieder.</note>
                <bibl>
                   <biblScope unit="page" n="85">85</biblScope>
@@ -12036,7 +11979,6 @@
                <persName type="namensvariante">
                   <forename>Willie</forename>
                </persName>
-               <birth>?</birth>
                <death>nach 1921</death>
                <note>Österr. Geiger, lebte in den USA und Großbritannien.</note>
                <bibl>
@@ -12215,7 +12157,6 @@
                   <forename>Carola</forename>
                </persName>
                <birth when="1902">1902</birth>
-               <death>?</death>
                <note>Dt. Geigerin.</note>
                <bibl>
                   <biblScope unit="page" n="190">190</biblScope>
