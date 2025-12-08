@@ -4,7 +4,8 @@
       "Bash(xxd:*)",
       "Bash(python3:*)",
       "Bash(xsltproc:*)",
-      "Bash(listperson.csv)"
+      "Bash(listperson.csv)",
+      "Bash(saxon:*)"
     ],
     "deny": [],
     "ask": []
