@@ -172,6 +172,9 @@
                <note>Schwed. Geiger, Komponist und Dirigent, der in vielen seiner Werke Elemente
                   schwedischer Volksmusik verarbeitete. 1910–1939 war er Director musices an der
                   Universität Uppsala.</note>
+               <bibl>
+                  <biblScope unit="page">117</biblScope>
+               </bibl>
             </person>
             <person xml:id="ansorge_p_9">
                <persName>
@@ -4975,6 +4978,7 @@
                </persName>
                <persName type="namensvariante">
                   <forename>Karel</forename>
+                  <surname>Halíř</surname>
                </persName>
                <idno subtype="gnd">https://d-nb.info/gnd/116405449</idno>
                <idno subtype="wikidata">https://www.wikidata.org/wiki/Q515310</idno>
@@ -5183,7 +5187,7 @@
             </person>
             <person xml:id="ansorge_p_280">
                <persName>
-                  <surname>Ha a</surname>
+                  <surname>Haša</surname>
                   <forename>Josef</forename>
                </persName>
                <birth><date when-iso="1875">1875</date></birth>
