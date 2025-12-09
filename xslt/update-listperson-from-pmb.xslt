@@ -8,7 +8,7 @@
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
     <!-- Load external listperson.xml from PMB and rename to pmblistperson -->
-    <xsl:variable name="pmb-listperson" select="doc('pmblistperson.xml')"/>
+    <xsl:variable name="pmb-listperson" select="doc('./../data/indices/pmblistperson.xml')"/>
     <xsl:key name="pmb-match" match="tei:person" use="tei:idno[@subtype='ansorge']"/>
 
     <!-- Identity template -->
