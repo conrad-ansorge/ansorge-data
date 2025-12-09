@@ -71,6 +71,7 @@
                 <xsl:variable name="parsed-date" select="ansorge:parse-date($date-text)"/>
                 <xsl:variable name="eventName" select="normalize-space(html:td[3])"/>
                 <event xmlns="http://www.tei-c.org/ns/1.0">
+                   
                     <xsl:attribute name="when">
                         <xsl:value-of select="$parsed-date"/>
                     </xsl:attribute>
@@ -80,23 +81,22 @@
                             count="html:tr[html:td[normalize-space(.) != '']][not(count(html:td) = 1 and html:td[@colspan &gt;= 4])]"
                             level="any"/>
                     </xsl:attribute>
+                    <xsl:element name="desc" namespace="http://www.tei-c.org/ns/1.0">
                     <xsl:element name="eventName" namespace="http://www.tei-c.org/ns/1.0">
                         <xsl:value-of select="$eventName"/>
                     </xsl:element>
-                    <xsl:element name="desc" namespace="http://www.tei-c.org/ns/1.0">
-                        <xsl:attribute name="type">
-                            <xsl:text>date</xsl:text>
-                        </xsl:attribute>
+                    <xsl:element name="date" namespace="http://www.tei-c.org/ns/1.0">
+                        
                         <xsl:value-of select="$date-text"/>
                     </xsl:element>
                     <!-- Location (Spalte 2) - kombiniere mit Fortsetzungszeilen -->
                     <xsl:variable name="all-location-cells" select="html:td[2] | $continuation-rows/html:td[2]"/>
                     <xsl:if test="$all-location-cells//html:p[normalize-space(.) != '']">
-                        <xsl:element name="place" namespace="http://www.tei-c.org/ns/1.0">
+                        
                             <placeName xmlns="http://www.tei-c.org/ns/1.0">
                                 <xsl:apply-templates select="$all-location-cells//html:p" mode="kein-p"/>
                             </placeName>
-                        </xsl:element>
+                        
                     </xsl:if>
 
                     <!-- Event description (Spalte 3) - kombiniere mit Fortsetzungszeilen -->
@@ -116,6 +116,7 @@
                             </xsl:call-template>
                         </desc>
                     </xsl:if>
+                    </xsl:element>
                 </event>
             </xsl:when>
             <!-- Lebensereignisse: Zeilen mit nur 1-3 td-Elementen -->
