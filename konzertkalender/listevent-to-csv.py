@@ -29,7 +29,7 @@ def text(el):
 
 
 def main():
-    src = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "listevent.xml"
+    src = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE.parent / "data" / "indices" / "listevent.xml"
     out = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE / "konzertkalender.csv"
     body = ET.parse(src).getroot().find(f"{N}text/{N}body")
 

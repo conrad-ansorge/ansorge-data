@@ -30,7 +30,7 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 DEFAULT_IN = HERE / "conrad-ansorge-1862-1930-ein-pianist-des-fin-de-siecle-in-berlin-und-wien (verschoben).html"
-DEFAULT_OUT = HERE / "listevent.xml"
+DEFAULT_OUT = HERE.parent / "data" / "indices" / "listevent.xml"
 
 XH = "{http://www.w3.org/1999/xhtml}"
 TEI_NS = "http://www.tei-c.org/ns/1.0"
@@ -1022,6 +1022,123 @@ def split_fluegel(runs):
     return [r for r in ort if r[0]], txt[m.end():].strip()
 
 
+# ------------------------------------------------------------------- Orte --
+# 'Berlin, Beethovensaal' -> <placeName><settlement>Berlin</settlement>,
+# <placeName type="venue">Beethovensaal</placeName></placeName>; ref="#pmb…" aus
+# pmb-orte.csv / pmb-veranstaltungsorte.csv (siehe pmb-orte.py).
+
+VENUE_WORDS = re.compile(r"^(?:im\s|in\s|„|\S*(?:saal|Saal|Verein|verein|haus|Haus|Aula|Theater)\b)")
+
+
+def split_place(txt):
+    """Spannen (start, end) für Ort und Veranstaltungsort (jeweils oder None)."""
+    if txt.strip() in ("o. O.", ""):
+        return None, None
+    m = re.match(r"^\[[^\]]*\]", txt)
+    if m and "," in m.group(0):           # '[Hirschberg, Erzgebirge?] Concerthause'
+        city_end = m.end()
+    else:
+        i = txt.find(",")
+        city_end = i if i >= 0 else len(txt)
+        m = re.match(r",\s*[A-Z]{2}\b", txt[city_end:])   # 'Poughkeepsie, NY, …'
+        if m:
+            city_end += m.end()
+        if i < 0:                          # 'Kiel im Saal …', 'Berlin Beethovensaal …'
+            m = re.match(r"^(\S+)\s+(.+)$", txt)
+            if m and VENUE_WORDS.match(m.group(2)):
+                city_end = m.end(1)
+    city = txt[:city_end].rstrip(" ,")
+    rest_start = city_end
+    while rest_start < len(txt) and txt[rest_start] in " ,":
+        rest_start += 1
+    city_span = (0, len(city)) if city else None
+    venue_span = (rest_start, len(txt.rstrip())) if txt[rest_start:].strip() else None
+    return city_span, venue_span
+
+
+def load_place_table(path, key):
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return {key(r): (r["pmb"].strip(), r.get("sicherheit", "")) for r in csv.DictReader(f)
+                if r.get("pmb", "").strip()}
+
+
+PMB_ORTE = load_place_table(HERE / "pmb-orte.csv", lambda r: r["ort"])
+PMB_VENUES = load_place_table(HERE / "pmb-veranstaltungsorte.csv",
+                              lambda r: (r["ort"], r["veranstaltungsort"]))
+PMB_STATS["ort"] = [0, 0]
+PMB_STATS["venue"] = [0, 0]
+
+
+# Ortsangaben ohne Ort, nur Veranstaltungsort
+VENUE_ONLY = {"Münchener Volkstheater"}
+
+
+def place_spans(txt):
+    """[(start, end, 'ort'|'venue')]: 'Halberstadt u. Blankenburg, …' -> zwei Orte."""
+    if txt.strip() in VENUE_ONLY:
+        return [(0, len(txt.rstrip()), "venue")]
+    city, venue = split_place(txt)
+    spans = []
+    if city:
+        m = re.fullmatch(r"(\S+)( u\. | und )(\S+)", txt[city[0]:city[1]])
+        if m:   # zwei Orte
+            spans += [(city[0] + m.start(1), city[0] + m.end(1), "ort"),
+                      (city[0] + m.start(3), city[0] + m.end(3), "ort")]
+        else:
+            spans.append((city[0], city[1], "ort"))
+    if venue:
+        spans.append((venue[0], venue[1], "venue"))
+    return spans
+
+
+def add_place(pn, runs):
+    txt = plain(runs)
+    spans = place_spans(txt)
+    if not spans:
+        add_runs(pn, runs)
+        return
+    pieces = split_runs_keep(runs, sorted({p for sp in spans for p in sp[:2]}))
+    pos, last, holder, cur = 0, None, pn, None
+    made = []
+    for text, it in pieces:
+        span = next((sp for sp in spans if sp[0] <= pos < sp[1]), None)
+        if span is not cur:
+            if span is None:
+                last, holder = holder, pn
+            else:
+                if span[2] == "ort":
+                    el = ET.SubElement(pn, T + "settlement")
+                else:
+                    el = ET.SubElement(pn, T + "placeName", type="venue")
+                made.append((span, el))
+                holder, last = el, None
+            cur = span
+        if it:
+            hi = ET.SubElement(holder, T + "hi", rend="italic")
+            hi.text = text
+            last = hi
+        elif last is None:
+            holder.text = (holder.text or "") + text
+        else:
+            last.tail = (last.tail or "") + text
+        pos += len(text)
+    # Schlüssel für Veranstaltungsorte: der (erste) Ort im selben placeName
+    city_txt = next((txt[s:e] for s, e, k in spans if k == "ort"), "")
+    for (s, e, kind), el in made:
+        if kind == "ort":
+            hit = PMB_ORTE.get(txt[s:e])
+        else:
+            hit = PMB_VENUES.get((city_txt, txt[s:e]))
+        PMB_STATS[kind][1] += 1
+        if hit:
+            PMB_STATS[kind][0] += 1
+            el.set("ref", "#pmb" + re.sub(r"\D", "", hit[0]))
+            if hit[1] in CERT:
+                el.set("cert", CERT[hit[1]])
+
+
 def write_tei(records, out_path):
     tei = ET.Element(T + "TEI")
     header = ET.SubElement(tei, T + "teiHeader")
@@ -1114,8 +1231,7 @@ def write_tei(records, out_path):
         if ort_runs:
             ort, fluegel = split_fluegel(ort_runs)
             if ort:
-                pn = ET.SubElement(desc, T + "placeName")
-                add_runs(pn, ort)
+                add_place(ET.SubElement(desc, T + "placeName"), ort)
             if fluegel:
                 ET.SubElement(desc, T + "rs", type="fluegel").text = fluegel
 
@@ -1142,7 +1258,8 @@ def write_tei(records, out_path):
     return stats
 
 
-MIXED = {T + n for n in ("item", "bibl", "p", "head", "placeName", "date", "time", "rs", "hi")}
+MIXED = {T + n for n in ("item", "bibl", "p", "head", "placeName", "settlement", "date", "time",
+                         "rs", "hi")}
 
 
 def indent_preserving_mixed(root):

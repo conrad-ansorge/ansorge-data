@@ -529,7 +529,7 @@ def main():
     bibl_file = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE.parent / "listBibl.xml"
     persons, works = load_pmb(person_file, bibl_file)
     pm, wm = PersonMatcher(persons, works), WorkMatcher(works)
-    p_count, w_count = collect(HERE / "listevent.xml")
+    p_count, w_count = collect(HERE.parent / "data" / "indices" / "listevent.xml")
 
     manual_p = read_manual(PERSON_CSV, lambda r: r["name"])
     rows, pid_of = [], {}
